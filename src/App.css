@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.mr-md-auto{
+  margin-right: auto !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pricing-header{
+  max-width: 700px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lead{
+  font-size: 1.25rem;
+  font-weight: 300;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  /* padding-left: 200px !important; */
+  /* padding-right: 200px !important; */
+}
+.card-deck{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.card-deck .card{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  flex: 1 0 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 0px;
+  min-width: 220px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(min-width:576px){
+  .card-deck{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap !important;
+    margin-right: -15px;
+    margin-left: -15px;
   }
-  to {
-    transform: rotate(360deg);
+  .card-deck .card{
+    display: flex;
+    flex: 1 0 0%;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 }
